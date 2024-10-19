@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta de Aprendizaje</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/LLL.css">
+</head>
+<body>
+    <div id="cabecera">
+        <img src="../img/logo.png" alt="Logo" class="logo">
+    </div>
+    <div id="contenido">
+        <div class="vertical-menu">
+             <a href="profile.html"><img src="../img/Avatar.png" class="imglogo"></a>
+             <p>
+             </p>
+            <a class="A2" href="#" onclick="confirmLogout()">Log out</a> <!-- onclick -->
+        </div>
+        <div class="container text-center">
+            <h1 class="mt-5" style="color: #ff4500;">Ruta de Aprendizaje</h1>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/A2.jpg" class="imagen"></a>
+                    </div>
+                    <div>
+                        <b><div class="portfolio1">Curso A1</div></b>
+                        <div class="portfolio2">Greetings</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/A1im.jpg" class="imagen"></a>
+                    </div>
+                    <b><div class="portfolio1">Curso A2</div></b>
+                    <div class="portfolio2">Daily routine</div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/B1.jpg" class="imagen"></a>
+                    </div>
+                    <b><div class="portfolio1">Curso B1</div></b>
+                    <div class="portfolio2">General conversations</div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/B2.jpg" class="imagen"></a>
+                    </div>
+                    <b><div class="portfolio1">Curso B2</div></b>
+                    <div class="portfolio2">Past and Future</div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/C1.jpg" class="imagen"></a>
+                    </div>
+                    <b><div class="portfolio1">Curso C1</div></b>
+                    <div class="portfolio2">Culture</div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="lecciones.html"><img src="../img/C2.jpg" class="imagen"></a>
+                    </div>
+                    <b><div class="portfolio1">Curso C2</div></b>
+                    <div class="portfolio2">Professional</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Incluir SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function confirmLogout() {
+            if (confirm("¿Seguro que quieres cerrar sesión?")) {
+                window.location.href = "../index.html";
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('mensaje') === 'exito') {
+                Swal.fire({
+                    title: '¡Inicio de sesión exitoso!',
+                    text: 'Bienvenido a tu ruta de aprendizaje.',
+                    icon: 'success',
+                    confirmButtonText: 'Continuar'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
