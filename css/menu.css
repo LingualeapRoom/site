@@ -1,0 +1,41 @@
+/* Navbar */
+.navbar {
+    height: 75px; /* Altura del navbar */
+    background-color: #fcdc5c ; /* Color de fondo */
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 20px; /* Espaciado lateral */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Posiciona en la parte superior */
+    width: 100%; /* Abarca el 100% del ancho de la página */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    height: 50px; /* Altura del logo */
+    margin-right: 150px; /* Espacio entre el logo y el menú */
+}
+
+.menu {
+    list-style: none; /* Quitar viñetas */
+    display: flex; /* Alinear los elementos del menú en línea */
+}
+
+.menu li {
+    margin-right: 30px; /* Espacio entre los elementos del menú */
+}
+
+.menu li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: black; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 25px;
+}
+
+.menu li a:hover{
+    color: orangered;
+}
+
+.seleccionado{
+    color: orangered !important;
+}

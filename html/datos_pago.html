@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Plan Avanzado</title>
+    <link rel="stylesheet" href="../css/datos_pago.css"> <!-- Asegúrate de que la ruta sea correcta -->
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+            <li><a href="registrarse.html">Registro</a></li>
+        </ul>
+    </div>
+    <div class="principal_container"> 
+        <div class="container">
+            <h1>Datos de Pago para Plan Avanzado</h1>
+            <form action="procesar_pago.php" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre del Titular de la Tarjeta:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </td>
+                        <td>
+                            <label for="numero_tarjeta">Número de Tarjeta de Crédito:</label>
+                            <input type="number" id="numero_tarjeta" maxlength="16" name="numero_tarjeta" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fecha_vencimiento">Fecha de Vencimiento (MM/AA):</label>
+                            <input type="date" id="fecha_vencimiento" name="fecha_vencimiento" required>
+                        </td>
+                        <td>
+                            <label for="cvv">Código de Seguridad (CVV):</label>
+                            <input type="number" id="cvv" name="cvv" maxlength="3" inputmode="numeric" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="direccion">Dirección de Facturación:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </td>
+                        <td>
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estado">Estado/Provincia:</label>
+                            <input type="text" id="estado" name="estado" required>
+                        </td>
+                        <td>
+                            <label for="codigo_postal">Código Postal:</label>
+                            <input type="number" id="codigo_postal" maxlength="5" name="codigo_postal" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="pais">País:</label>
+                            <input type="text" id="pais" name="pais" required>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Pagar</button>
+                <input type="hidden" name="usuario_id" id="usuario_id"> <!-- Campo oculto para el ID del usuario -->
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Obtener el ID del usuario de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const usuario_id = urlParams.get('id');
+
+        // Agregar el ID de usuario al campo oculto en el formulario
+        document.addEventListener("DOMContentLoaded", function() {
+            if (usuario_id) {
+                document.getElementById("usuario_id").value = usuario_id;
+            }
+        });
+    </script>
+</body>
+</html>
