@@ -50,6 +50,7 @@ html, body {
     margin: 20px auto;
     max-width: 900px;
     font-size: 23px;
+    font-weight: bold;
     border-radius: 8px;
     line-height: 1.6;
     opacity: 0; /* Empieza invisible */
