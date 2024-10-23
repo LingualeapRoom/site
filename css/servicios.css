@@ -1,0 +1,144 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo negro para la página */
+body {
+    background-color: black;
+}
+
+/* Título */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em; /* Tamaño grande para el título */
+    margin: 20px 0; /* Espacio alrededor del título */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Comenzar desde la parte superior */
+    padding: 20px; /* Espacio vertical adicional alrededor */
+}
+
+/* Estilos de los cuadros de información */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px); /* Comienza 20px por debajo de su posición original */
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    to {
+        transform: translateY(0); /* Termina en su posición original */
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+.info-box1, .info-box2 {
+    color: white; /* Color del texto */
+    padding: 30px; /* Espacio interno más pequeño */
+    margin: 20px; /* Margen alrededor */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 1000px; /* Ancho máximo */
+    font-size: 25px; /* Tamaño de fuente ajustado a 25px */
+    animation: slideInUp 2s ease forwards; /* Aplicar la animación */
+    opacity: 0; /* Asegurarse de que comienza invisible */
+}
+
+.info-box1 {
+    background-color: rgb(255, 85, 85, 0.69);
+}
+
+.info-box2 {
+    background-color: rgb(0, 123, 255, 0.69);
+}
+
+/* Contenedor de imagen y línea */
+.image-container {
+    position: relative; /* Para posicionar la línea */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Espacio superior para separar de los divs */
+    margin-bottom: 50px;
+}
+
+/* Línea superior */
+.divider {
+    width: 100%;
+    height: 5px; /* Grosor de la línea */
+    background-color: #ffde59; /* Color de la línea */
+    margin: 20px 0; /* Espacio alrededor */
+}
+
+/* Estilos del botón */
+.custom-button {
+    width: 350px;
+    height: 75px;
+    padding: 14px 45px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: yellow ; /* Color del botón */
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 50px 0 40px; /* Espacio arriba y abajo del botón, más espacio en la parte inferior */
+    animation: pulse 2s infinite ease-in-out; /* Animación suave y continua */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-button:hover {
+    background-color: white;
+}
+
+.contenedorM{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo-descubramas.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.color-fondo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 59 115 / 89%);
+}
+
+.custom-video {
+    top: 320px; /* Ajusta según donde quieras posicionarlo */
+    margin: auto;
+    width: 900px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 10px; /* Para bordes redondeados (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra (opcional) */
+}
+
+.h1video {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white ; /* Color del botón */
+}

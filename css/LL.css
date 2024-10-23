@@ -1,0 +1,135 @@
+.center{
+    text-align: center;
+}
+
+
+#contenedor{
+    background-color: rgb(31, 29, 29);
+    font-family: Arial;
+}
+
+#cabecera{
+    background-color: #fcdc5c;
+    width: 84.5%;
+    height: 100px;
+    float: right;
+    margin-left: 850%;
+}
+
+#menu{
+    background-color: #1e1b7e;
+    height: 850px;
+    width: 84.5%; 
+    float: right;
+}
+
+#contenido{
+    background-color: #fc3434;
+    height: 850px;
+    width: 15%;
+    float: left;
+}
+
+#pie{
+    background-color: #4bb86e;
+    width: 84.5%;
+    height: 100px;
+    float: right;
+    clear: both;
+}
+
+#cabecera h2, #pie h2{
+    line-height: 70px;
+}
+
+#contenido h2{
+    line-height: 410px;
+}
+
+/* Imagenes y contenido */
+
+
+.imagen:hover{
+    transform: scale(.85);
+}
+.imagen{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease;
+    -webkit-transition: 2s ease;
+    border-radius: 45%;
+    margin-left: 70px;
+}
+
+.portfolio1{
+    width: 300px;
+    font-size: 35px;
+    text-align: center;
+    background-color: #2f5eb0;
+    border-radius: 25%;
+    margin-left: 70px;
+}
+
+.portfolio2{
+    width: 300px;
+    font-family: italic;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(188, 44, 44);
+    border-radius: 25%;
+    margin-left: 70px;
+}
+
+.imglogo{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -390px;
+}
+
+/* Vertical menu */
+.vertical-menu {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+}
+
+.vertical-menu a {
+    background-color: #fff824; 
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vertical-menu a {
+        font-size: 0.8rem;
+        padding: 10px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .vertical-menu a {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+}
+.logo {
+    height: 90px; /* Altura del logo */
+    margin-right: 70px; /* Espacio entre el logo y el menú */
+}

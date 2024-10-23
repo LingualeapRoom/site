@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a> <!-- Asegúrate de tener el logo en la ruta correcta -->
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+            <li><a class="seleccionado" href="registrarse.html">Registro</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="mensaje" style="text-align: center; color: green;"></div>
+
+        <form action="register.php" method="post">
+            <h1 style="text-align: center; color: white; margin-bottom: 35px">REGISTRATE</h1>
+            <h2 style="color: white">NOMBRE</h2>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+            <h2 style="color: white">EDAD</h2>
+            <input type="number" name="edad" placeholder="Escribe tu edad" required>
+            <h2 style="color: white">CORREO</h2>
+            <input type="email" name="email" placeholder="Escribe tu email" required>
+            <h2 style="color: white">CONTRASEÑA</h2>
+            <input type="password" name="password" placeholder="Escribe tu contraseña" required>
+        
+            <button class="custom-button" type="submit">REGISTRATE</button>
+        </form>        
+    </div>
+
+    
+    <!-- Mostrar el mensaje de SweetAlert -->
+    <script>
+        // Función para obtener parámetros de la URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+    
+        var mensaje = getUrlParameter('mensaje');
+        var tipoMensaje = getUrlParameter('tipo_mensaje');
+    
+        if (mensaje) {
+            Swal.fire({
+                title: tipoMensaje === 'success' ? '¡Éxito!' : '¡Error!',
+                text: mensaje,
+                icon: tipoMensaje,
+                confirmButtonText: 'Aceptar'
+            });
+        }
+    </script>
+    
+        
+</body>
+</html>
