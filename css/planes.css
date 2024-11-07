@@ -1,0 +1,124 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorM {
+    width: 100%;
+    background-image: url("../img/5.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.color-fondo {
+    width: 100%;
+    background-color: rgb(0 59 115 / 89%);
+    padding: 40px 0; /* Espaciado interno para mejor visualización */
+}
+
+body { 
+    background-color: black !important;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Previene la barra de desplazamiento horizontal */
+}
+
+/* Wrapper para la sección de contenido y video */
+.content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden; /* Asegura que no haya desbordamientos */
+}
+
+/* Contenido de texto */
+.text-content {
+    padding-right: 20px;
+}
+
+/* Video */
+.custom-video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Elimina el margen para alinearlo mejor */
+}
+
+/* Títulos y texto */
+.plan-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.plan-subtitle {
+    font-size: 28px;
+    color: white;
+    margin: 20px 0;
+}
+
+.plan-price {
+    font-size: 24px;
+    color: yellow;
+    margin: 10px 0;
+}
+
+.benefits-list {
+    list-style-type: none;
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.benefits-list > li {
+    color: white;
+}
+
+/* Botones */
+.buttons {
+    gap: 15px; /* Espacio entre botones */
+}
+
+.custom-button1, .custom-button2, .custom-button3 {
+    padding: 14px 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.custom-button1 {
+    background-color: yellow;
+    color: black;
+    width: 250px;
+}
+
+.custom-button2 {
+    background-color: #ac2c4c;
+    color: black;
+}
+
+.custom-button3 {
+    background-color: yellow;
+    color: black;
+    width: 250px;
+}
+
+.custom-button1:hover,
+.custom-button2:hover,
+.custom-button3:hover {
+    background-color: white;
+}
+
+/* Animación */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
