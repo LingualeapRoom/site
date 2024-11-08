@@ -1,0 +1,46 @@
+/* Navbar */
+.navbar {
+    background-color: #fcdc5c; /* Fondo amarillo */
+    padding: 0 20px; /* Espaciado lateral */
+    top: 0; /* Posiciona en la parte superior */
+    width: 100%; /* Abarca el 100% del ancho de la página */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    height: 50px; /* Altura del logo */
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+}
+
+.menu {
+    list-style: none; /* Quitar viñetas */
+}
+
+/* Estilo para los enlaces */
+.custom-link {
+    font-size: 24px; /* Tamaño de letra grande */
+    color: black; /* Texto en negro */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Quitar subrayado */
+    margin-right: 30px; /* Espacio entre los elementos del menú */
+}
+
+.custom-link:hover {
+    color: orangered; /* Color al pasar el mouse */
+}
+
+.seleccionado {
+    color: orangered !important; /* Color para el enlace seleccionado */
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-nav {
+        align-items: center; /* Alinear el menú con el logo */
+    }
+}
+
+/* Estilos del botón hamburguesa */
+.navbar-toggler-icon {
+    background-color: black; /* Color del ícono de la hamburguesa */
+}
