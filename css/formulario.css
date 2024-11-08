@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorM {
+    background-color: rgba(51, 45, 228, 0.80);
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo-descubramas.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilos del formulario */
+#contact-form {
+    background-color: rgba(212, 11, 11, 0.8); 
+    color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+h3 {
+    color: white; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
+
+.text-center {
+    color: white; 
+}
+
+.header-section {
+    background-color: rgba(51, 45, 228, 0.80); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
