@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="../css/planes.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link seleccionado" href="planes.html">Iniciar Sesión/Registro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="contenedorM">
+        <div class="color-fondo" style="margin-top: 0 !important;">
+            <div class="mt-5">
+                <div class="row flex-lg-row flex-column align-items-center content-wrapper">
+                    <!-- Contenido de texto y lista -->
+                    <div class="col-lg-5 col-md-12 text-content text-center">
+                        <h2 class="plan-title">Avanzado</h2>
+                        <h3 class="plan-subtitle">Beneficios del Plan</h3>
+                        <p class="plan-price">$15.00/mes</p>
+                        <ul class="benefits-list">
+                            <li>• Lecciones extras</li>
+                            <li>• Temas extras</li>
+                            <li>• Avatares extras</li>
+                            <li>• Bloqueador de anuncios</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Video -->
+                    <div class="col-lg-6 col-md-12 video-section d-flex justify-content-center">
+                        <video class="custom-video" poster="../img/miniatura.png" controls>
+                            <source src="../video/Vídeo sin título ‐ Hecho con Clipchamp (1).mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+                <!-- Botones debajo de la sección de contenido y video -->
+                <div class="row mt-4">
+                    <div class="col-12 d-flex flex-column flex-lg-row align-items-center justify-content-center buttons">
+                        <a href="http://lingualeap.rf.gd/login/index.php" id="plan-avanzado-link"><button class="custom-button1">YA TENGO CUENTA PREMIUM</button></a>
+                        <a href="datos_pago.html" id="plan-avanzado-link"><button class="custom-button2">PLAN AVANZADO</button></a>
+                        <a href="https://lingualeap.gnomio.com/login"><button class="custom-button3">GRATUITO</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
